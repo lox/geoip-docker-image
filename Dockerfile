@@ -5,4 +5,4 @@ RUN apk --update add geoip
 ADD databases /usr/share/GeoIP
 ADD databases/GeoIP.conf /etc/
 
-ENTRYPOINT ["geoiplookup","-v"]
+ENTRYPOINT ["geoiplookup"]

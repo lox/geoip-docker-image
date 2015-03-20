@@ -37,8 +37,8 @@ Running
 
 ```bash
 docker build -t geoip . 
-docker run geoip 203.32.112.20 
+docker run geoip -f /usr/share/GeoIP/GeoLiteCity.dat 203.32.112.20
 ```
 
-The geoip image will have a volume at `/usr/local/share/GeoIP` that you can use via `volumes-from` in other images.
+The geoip image will have a volume at `/usr/share/GeoIP` that you can use via `volumes-from` in other images.
 
